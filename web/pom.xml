@@ -11,5 +11,21 @@
 
     <artifactId>web</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wangkai</groupId>
+            <artifactId>dubboProducer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
+    <build>
+        <finalName>web</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
