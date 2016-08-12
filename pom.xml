@@ -14,6 +14,8 @@
         <module>datasource</module>
         <module>client</module>
         <module>dubboProducer</module>
+        <module>eurekaServer</module>
+        <module>eurekaClient</module>
     </modules>
 
     <parent>

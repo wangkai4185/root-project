@@ -1,21 +1,20 @@
 package com.wangkai;
 
-
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
  * Application
  */
 @SpringBootApplication
-@EnableAutoConfiguration
 @ComponentScan(basePackages = {"com.wangkai"})
 @ImportResource({"classpath:spring-dubbo-consumer.xml"})
-public class Application extends WebMvcConfigurerAdapter {
+@EnableAsync
+public class Application extends WebMvcConfigurerAdapter{
 
     /**
      * 程序入口

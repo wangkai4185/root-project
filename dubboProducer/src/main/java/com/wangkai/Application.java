@@ -14,7 +14,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @author niyanshi
  */
 @SpringBootApplication
-@EnableAutoConfiguration
 @ComponentScan(basePackages = {"com.wangkai"})
 @ImportResource({"classpath:spring-dubbo-producer.xml"})
 public class Application extends WebMvcConfigurerAdapter {
