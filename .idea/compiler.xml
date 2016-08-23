@@ -17,59 +17,18 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for client" enabled="true">
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="client" />
-      </profile>
-      <profile default="false" name="Annotation profile for datasource" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="datasource" />
-      </profile>
-      <profile default="false" name="Annotation profile for web" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="web" />
-      </profile>
-      <profile default="false" name="Annotation profile for dubboProducer" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dubboProducer" />
-      </profile>
-      <profile default="false" name="Annotation profile for common" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="common" />
-      </profile>
-      <profile default="false" name="Annotation profile for eurekaServer" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="datasource" />
+        <module name="dubboProducer" />
+        <module name="eurekaClient" />
         <module name="eurekaServer" />
-      </profile>
-      <profile default="false" name="Annotation profile for eurekaClient" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for eurekaServer2" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -79,7 +38,6 @@
       <module name="dubboProducer" target="1.6" />
       <module name="eurekaClient" target="1.6" />
       <module name="eurekaServer" target="1.6" />
-      <module name="eurekaServer2" target="1.8" />
       <module name="root-project" target="1.6" />
       <module name="web" target="1.6" />
     </bytecodeTargetLevel>
